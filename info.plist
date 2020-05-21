@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>com.msk.sbb</string>
+	<key>category</key>
+	<string>Tools</string>
+	<key>connections</key>
+	<dict/>
+	<key>createdby</key>
+	<string>Michael Schmidt-Korth</string>
+	<key>description</key>
+	<string>Show connections via SBB</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>SBB</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>sbb</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<false/>
+				<key>queuedelaymode</key>
+				<integer>1</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Getting routes for {query}...</string>
+				<key>script</key>
+				<string>/usr/bin/python -O main.py "$1"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Connections betwen stations: &lt;station1&gt; &lt;station2&gt;</string>
+				<key>title</key>
+				<string>SBB Search</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>43C91B7A-A05B-414D-BD87-72EB9D46003C</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>Usage: sbb &lt;from-station&gt; &lt;to-station&gt;
+
+It is not possible to provide a link to the SBB website for a selected route, as SBB does not allow to pass station/route Ids.
+
+The workflow will perform a 'best guess' on the station name, e.g. 'Bannhof' is interpreted as 'Bahnhof', or 'Bellevue' is interpreted as 'Zürich, Bellevue'. You can enter station names or addresses.
+
+Search is powered by search.ch and OpenData.ch.</string>
+	<key>uidata</key>
+	<dict>
+		<key>43C91B7A-A05B-414D-BD87-72EB9D46003C</key>
+		<dict>
+			<key>xpos</key>
+			<integer>330</integer>
+			<key>ypos</key>
+			<integer>160</integer>
+		</dict>
+	</dict>
+	<key>version</key>
+	<string>0.0.1</string>
+	<key>webaddress</key>
+	<string></string>
+</dict>
+</plist>
