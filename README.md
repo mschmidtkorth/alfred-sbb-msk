@@ -1,4 +1,4 @@
-# SBB/CFF/FFS (Swiss Railway) Timetable Workflow
+# SBB/CFF/FFS (Swiss Railway) Timetable Workflow for Alfred
 This workflow allows you to show SBB train connections.
 
 # Features
